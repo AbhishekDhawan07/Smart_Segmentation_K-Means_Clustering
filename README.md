@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🛍️ Smart Segmentation — K-Means Clustering for Customer Segmentation
+# 🛍️ Smart Segmentation - K-Means Clustering for Customer Segmentation
 
 ### *Turning Raw Customer Data into Actionable Business Intelligence*
 
@@ -38,25 +38,25 @@
 
 ```
 🗂️ Smart_Segmentation_K-Means_Clustering/
-│
+├── Readme.md 
 └── 📂 K-Means Clustering Project - Customer Segmentation/
     │
-    ├── 📓 K_-_Means_Clustering_Project_-_Customer_Segmentation.ipynb   ← Full Notebook
-    └── 📊 Mall_Customers.csv                                            ← Mall Dataset
+    ├── 📓 K_-_Means_Clustering_Project_-_Customer_Segmentation.ipynb   # Full Notebook
+    └── 📊 Mall_Customers.csv                                            # Mall Dataset
 ```
 
 ---
 
 ## 🎯 What Is This Project?
 
-This project applies **K-Means Clustering** — an unsupervised machine learning algorithm — to segment mall customers into **distinct behavioral groups** based on their **Annual Income** and **Spending Score**.
+This project applies **K-Means Clustering** - an unsupervised machine learning algorithm - to segment mall customers into **distinct behavioral groups** based on their **Annual Income** and **Spending Score**.
 
 > 💡 Unlike classification, clustering has **no predefined labels**. The algorithm discovers hidden patterns entirely on its own!
 
 **The Business Question Being Answered:**
 
 ```
-🤔  "Which types of customers visit our mall — and how should we market to each group?"
+🤔  "Which types of customers visit our mall - and how should we market to each group?"
 ```
 
 ---
@@ -95,25 +95,25 @@ This project applies **K-Means Clustering** — an unsupervised machine learning
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │                                                              │
-│  📥  LOAD DATA           →   Read Mall_Customers.csv         │
+│  📥  LOAD DATA           ->   Read Mall_Customers.csv         │
 │         ↓                                                    │
-│  🔍  EDA                 →   Shape, Info, Stats              │
+│  🔍  EDA                 ->   Shape, Info, Stats              │
 │         ↓                                                    │
-│  📊  UNIVARIATE ANALYSIS →   Gender, Income Distributions    │
+│  📊  UNIVARIATE ANALYSIS ->   Gender, Income Distributions    │
 │         ↓                                                    │
-│  📈  BIVARIATE ANALYSIS  →   Income vs Spending, Age vs Score│
+│  📈  BIVARIATE ANALYSIS  ->   Income vs Spending, Age vs Score│
 │         ↓                                                    │
-│  🛠️  FEATURE ENGINEERING →   Outlier Capping + Encoding      │
+│  🛠️  FEATURE ENGINEERING ->  Outlier Capping + Encoding      │
 │         ↓                                                    │
-│  ⚖️  FEATURE SCALING     →   StandardScaler                  │
+│  ⚖️  FEATURE SCALING     ->  StandardScaler                  │
 │         ↓                                                    │
-│  📐  ELBOW METHOD        →   Find Optimal K                  │
+│  📐  ELBOW METHOD        ->  Find Optimal K                  │
 │         ↓                                                    │
-│  🤖  K-MEANS TRAINING    →   K=5, K-Means++ Init             │
+│  🤖  K-MEANS TRAINING    ->  K=5, K-Means++ Init             │
 │         ↓                                                    │
-│  🎨  VISUALIZE CLUSTERS  →   Color-coded Scatter Plot        │
+│  🎨  VISUALIZE CLUSTERS  ->  Color-coded Scatter Plot        │
 │         ↓                                                    │
-│  💡  BUSINESS INSIGHTS   →   Interpret Each Segment          │
+│  💡  BUSINESS INSIGHTS   ->  Interpret Each Segment          │
 │                                                              │
 └──────────────────────────────────────────────────────────────┘
 ```
@@ -135,14 +135,14 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 ```
 
-> 🔧 All major data science and ML libraries loaded — no deep learning frameworks needed. K-Means is lightweight and fast!
+> 🔧 All major data science and ML libraries loaded - no deep learning frameworks needed. K-Means is lightweight and fast!
 
 </details>
 
 ---
 
 <details>
-<summary><b>🔍 Step 2 — Exploratory Data Analysis (EDA)</b> 🖱️ click to expand</summary>
+<summary><b>🔍 Step 2 - Exploratory Data Analysis (EDA)</b> 🖱️ click to expand</summary>
 <br>
 
 | 🔎 Check | 📋 Finding |
@@ -220,7 +220,7 @@ Categorical text encoded to numerical values for compatibility:
 
 ```python
 df['Gender'] = df['Gender'].map({'Male': 0, 'Female': 1})
-# Male → 0  |  Female → 1
+# Male -> 0  |  Female -> 1
 ```
 
 </details>
